@@ -55,7 +55,7 @@
       register: out
 
     - name: Set a fact
-      ansible.builtin.debug:
+      ansible.builtin.set_fact:
         UPTIME: "{{out.stdout}}"
 
     - name: Print out
