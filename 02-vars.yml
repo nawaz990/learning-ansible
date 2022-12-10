@@ -40,6 +40,7 @@
 - name: Access fact
   hosts: all
   connection: local
+  gather_facts: false
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
