@@ -3,4 +3,4 @@
   tasks:
     - name: Print a Parameter
       ansible.builtin.debug:
-        msg: "{{ lookup('aws_ssm', 'param.dev.catalogue.MONGO', bypath=True ) }}"
+        msg: "{{ lookup('aws_ssm', 'param.dev.catalogue.MONGO', region='us-east-1' ) }}"
